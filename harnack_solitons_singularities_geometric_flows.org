@@ -1,0 +1,80 @@
+#+TITLE: Harnack Inequalities, Solitons and Singularity Classification for Geometric Heat Flows
+#+AUTHOR: Paul Bryan
+#+SETUPFILE: ~/.emacs.d/org-templates/bibliography.org
+#+OPTIONS: toc:nil
+
+# ***  Class
+#+LATEX_CLASS: amsbook
+
+# *** Macros
+#+LATEX_HEADER: \input{local_definitions}
+
+# *** For bundling
+#+LATEX_HEADER: \usepackage{snapshot}
+
+# *** Author
+#+LATEX_HEADER: \address{}
+#+LATEX_HEADER: \email{pabryan@gmail.com}
+#+LATEX_HEADER: \urladdr{http://pabryan.github.io/}
+
+# *** Metadata
+#+LaTeX_HEADER: \keywords{}
+#+LATEX_HEADER: \subjclass[2010]{}
+
+# *** Other formatting settings
+#+LATEX_HEADER: \date{}
+
+
+* Introduction
+* PDE on Manifolds
+- Elliptic and parabolic operators between vector bundles. Eg. acting on functions an operator is a map from the trivial bundle $M\times \RR \simeq C^{\infty} (M, \RR)$ to itself. The Ricci flow takes symmetric two-tensors (positive definite? fibre bundle?) and produces another symmetric two tensor - the Ricci curvature.
+- How to deal with parabolic equations? On the one hand, we can just call it parabolic if it's positive semi-definite and somehow the degernate directions lie on a curve or lower dimensional submanifold? This is what Nirenberg does. Another approach is 
+- Space time formulations. Very important I think to get my head around this! Should include Ben's changing connection ideas.
+- Linear equations.
+- Symbols and non-linear equations.
+- Existence and uniqueness theorems.
+- Maximum principle, particularly in terms of convexity!
+  - Hamilton tensor max principle.
+  - Andrews tensor max principle.
+* Geometric Flows
+- Heat equation
+- MCF
+- Ricci flow
+- Yamabe flow
+- Gauss curvature flow
+- Fully non-linear flows
+- Preservation of convexity
+- General techniques like Uhlenbeck, commuting derivatives, Bochner etc. and Andrews space-time connections.
+- Evolution of geometric quantities built from known one. e.g. Levi-Civita connection (need to work in a Jet Bundle?), metric, sff, curvature, measure. I can probably determine the differential of these quantities individually and have a general theorem for building tensors from others via contractions, tensor products, wedge products, determinants etc. and how these evolve. Eg. one take the evolution of a metric $g$ as $\partial_t g = h$ for some $2$-tensor $h$ and write the evolution of curvature, measure etc. all in terms of $h$.
+- Change of quantities under reparametrisation such as conformal change, Gauss map change, soliton change etc.
+- Geometric invariance and the fact that submanifold flows only depend on the normal speed.
+- Special parametrisations such as Gauss map, integral curve parametrisations.
+* Solitons
+- General definitions like I have in my conformal solitons article, including changing parametrisations.
+- Self similar solutions of heat equation: heat kernel!
+- Translating, and homothetic solitons.
+- Gauss map parametrisation here?
+- Identities on solitons obtained by differentiating the soliton equation.
+* Harnack Inequalities
+- Scalar Harnack inequalities
+- Tensor Harnack inequalities
+- Equality achieved on solitons.
+- Li-Yau approach
+- Gauss map parametrisation also produces Harnack quantity.
+* Space Time Formulation
+- Ben Chow's space-time track.
+- Connection with minimal surfaces in the warped product metric as in Smoczyk's work.
+* Singularity Classfications
+- Huisken monotonicity.
+- Colding-Minicozzi stability and more generally Orezzo-Sun. 
+- Blow up limits: Hamilton blow up sequence.
+- Compactness results, like Cheeger/Gromov: curvature and injectivity radius bounds?
+- Ancient solutions.
+* Notes 							   :noexport:
+** Comments from Ben
+1. Is $n_\delta$ the choice with negative $z$-component?
+2. Make more rigorous what is meant by $z$-coord. of $\alpha$ is $\geq z$-coord. of $\beta$. E.g., what points on alpha correspond to what points on beta? One way might be to take the intersection of S^2, P, and span{n,(0,0,1)} as the north and south poles and use the great circles passing through them in S^2_+.
+3. Lemma 0.2: $\gamma_+ \geq R(\gamma_-)$ (abbreviated)?
+4. Define $\alpha > \beta$ to be strictly greater in the interior of S^2_+ and at the boundary (assume equal there) the angle is positive.
+5. Conclusion of Lemma 0.3 is > instead of geq.
+
